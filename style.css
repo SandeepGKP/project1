@@ -1,0 +1,325 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* CSS Variable */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    position:sticky;
+    top:0px;
+    
+}
+/* Navigation bar :logo and img*/
+#logo{
+    margin:1px 10px;
+}
+#logo img{
+    height:56px;
+    margin:1px 4px;
+}
+
+/* Navigation bar :list styling*/
+#navbar{
+    position:sticky;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    content:"";
+    background-color:rgb(70, 46, 50);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.5;
+
+}
+/* .navbar{
+    background-color:pink;
+    width: 100%;
+    height: 100%;
+    animation: style 10s infinite; /*(animation-name,animation-duration,animation-count, )*/
+    /* animation-delay: 10s; */
+    /* animation-direction:forward; */
+
+/* @keyframes style{
+    from{
+        width:3%;
+    
+}
+to{
+    width:100%
+
+}
+    
+}  */
+
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    display:block;
+    padding:10px 22px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:red;
+    background-color:white;
+    box-shadow: 4px 3px 5px greenyellow;
+}
+#navbar ul li a{
+    color:white;
+}
+#navbar{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function:3s;
+    /* short-hand operation */
+    /* transition:background-color 2s ease-in-out 3s; */
+}
+#navbar:hover{
+    background-color: red;
+    transform:skew(20deg);
+    /* transform:scale(30); */
+    /* transform:translateY(20px) */
+    /* transform:translate(2px,4px); */
+    
+}
+
+
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    height:610px;
+    justify-content:center;
+    align-items:center;
+}
+#home::before{
+    content:"";
+    border-radius: 10px;
+    background:url('https://source.unsplash.com/random/900x700/?beverage') no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;        
+}
+#home p{
+    text-align: center;
+  
+}
+
+#home h1{
+    color:pink;
+    text-align:center;
+    text-shadow: 2px 2px red;
+    font-size: 2.5rem;
+    /* animation:container 7s ease-out infinite; */
+}
+/* @keyframes container{
+    10%{
+        transform: rotate(90deg);
+        font-size: 0px;
+    }
+    20%{
+        transform: rotate(180deg);
+        font-size: 20px;
+    }
+    40%{
+        transform: rotate(270deg);
+        font-size: 25px;
+    }
+    60%{
+        transform: rotate(360deg);
+        font-size: 30px;
+    }
+    80%{
+        transform: rotate(450deg);
+        font-size: 35px;
+    }
+    100%{
+        transform: rotate(720deg);
+        font-size: 35px;
+
+    }
+    
+
+} */
+
+#home .btn:hover{
+    color:rgb(179, 219, 67);
+    background-color:darkorange;
+ }
+
+/* service section */
+#services{
+    margin:10px;
+    display:flex;
+}
+
+#services .box{
+    border:10px solid pink;
+    padding:30px;
+    margin:3px 10px;
+    border-radius: 20px;
+    background-color: rgb(149, 212, 152);
+    box-shadow: 10px 10px gold;
+}
+#services .box img{
+    border-radius: 10px;
+    height:60px;
+    display:block;
+    margin:auto;
+}
+
+#client-section{
+    position:relative;
+
+}
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    border-radius: 10px;
+    background:url('https://source.unsplash.com/random/900x700/?Indian Flag') no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.5;
+
+}
+
+.client-item{
+    padding:34px;
+
+}
+
+.client-item img{
+    border-radius: 10px;
+
+}
+
+/* Contact section */
+
+#contact{
+    position:relative;
+    top: 19px;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    border-radius: 10px;
+    background:url('https://source.unsplash.com/random/900x700/?iphone') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 10px;
+    font-size:1.1rem;
+
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size:1.3rem;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    background: palevioletred;
+    color:white;
+    padding:9px 20px;
+    /* margin:20px; */
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.h-primary.center{
+    display:flex;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+.h-primary-centre{
+    display:flex;
+    justify-content: center;
+
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Utility class */
+.h-primary{
+    font-size:3.8rem;
+    padding:12px;
+
+}
+.h-primary-center{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    top:0px;
+    
+}
+
+.h-secondary{
+    font-size:2.8rem;
+    padding:12px;
+    text-align: center;
+
+}
+
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    border-radius:10px;
+    background-color:brown;
+    box-shadow: 4px 2px rgb(32, 190, 218);
+    color:white;
+    margin:17px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+
